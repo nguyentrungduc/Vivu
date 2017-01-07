@@ -1,0 +1,46 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.duc.vivu.fragments.MainFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <ImageView
+                android:src="@drawable/category_0"
+                android:scaleType="centerCrop"
+                android:id="@+id/ivm_category"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+            <android.support.design.widget.TabLayout
+                app:tabMode="scrollable"
+                android:id="@+id/tab_layout"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.design.widget.TabLayout>
+
+        </RelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpaper"
+            android:layout_below="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v4.view.ViewPager>
+
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>
