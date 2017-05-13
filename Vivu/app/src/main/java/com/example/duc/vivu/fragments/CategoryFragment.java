@@ -56,6 +56,7 @@ public class CategoryFragment extends Fragment {
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
         feedAdapter = new FeedAdapter(getContext());
+        feedAdapter.notifyDataSetChanged();
         recyclerView.setAdapter(feedAdapter);
         Log.d(TAG,"ss"+ FeedItem.list.toString());
 
